@@ -1,0 +1,17 @@
+$mobile-width: 375px;
+$desktop-width: 1440px;
+$strong-cyan: hsl(171, 66%, 44%);
+$light-blue: hsl(233, 100%, 69%);
+$dark-grayish-blue: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
+
+@mixin center-everything {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin borders($color) {
+    border: 1px solid $color;
+}

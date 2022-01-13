@@ -1,0 +1,105 @@
+@import "config";
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+  font: {
+    family: "Bai Jamjuree", sans-serif;
+    size: 18px;
+    weight: 400;
+  }
+}
+
+.container {
+  max-width: $mobile-width;
+  width: 100%;
+  border: 1px solid black;
+  margin: auto;
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.description {
+  @include center-everything;
+  padding: 0 1.5em;
+  h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: $dark-grayish-blue;
+  }
+
+  p {
+    text-align: center;
+    color: $grayish-blue;
+    position: relative;
+    top: -30px;
+  }
+}
+
+.cpy {
+  color: green;
+  margin: 0.75em 0;
+}
+
+h1 {
+  font-weight: 600;
+  text-align: center;
+  color: $dark-grayish-blue;
+  font-size: 2rem;
+}
+
+.btn {
+  width: 300px;
+  height: 45px;
+  border-radius: 25px;
+  color: white;
+  margin: 0.4em;
+}
+
+.download-btn {
+  @include center-everything;
+  .ios {
+    background-color: $strong-cyan;
+    @include borders($strong-cyan);
+  }
+  .mac {
+    background-color: $light-blue;
+    @include borders($light-blue);
+  }
+}
+
+.image {
+  width: 75%;
+  margin: 0 2.5em;
+}
+
+.partners {
+  @include center-everything;
+  img {
+    margin: 1em;
+  }
+}
+
+.footer {
+  @include center-everything;
+  background-color: $grayish-blue;
+  margin-top: 8em;
+  text-align: center;
+  .cp {
+    color: green;
+    margin: 0.6em 0;
+  }
+}
+
+.footer-main-contain p {
+  color: $dark-grayish-blue;
+  margin: 0.5em;
+}
+
+.social {
+  display: flex;
+  img {
+      margin: 0 1em 2em 1em;
+  }
+}
