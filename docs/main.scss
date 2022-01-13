@@ -10,9 +10,7 @@
 }
 
 .container {
-  max-width: $mobile-width;
-  width: 100%;
-  border: 1px solid black;
+  width: $mobile-width;
   margin: auto;
   background-image: url(images/bg-header-mobile.png);
   background-repeat: no-repeat;
@@ -100,6 +98,48 @@ h1 {
 .social {
   display: flex;
   img {
-      margin: 0 1em 2em 1em;
+    margin: 0 1em 2em 1em;
+  }
+}
+
+@media (min-width: 675px) {
+  .container {
+    width: $desktop-width;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .download-btn {
+    flex-direction: row;
+  }
+  .main-tab {
+    display: flex;
+    margin: 0.5em 0 5em 0;
+  }
+  .im-2 {
+    margin-top: 3em;
+    margin-left: 15em;
+  }
+  .second-tab {
+    display: flex;
+  }
+  .partners {
+    flex-direction: row;
+    img {
+      margin-right: 3em;
+    }
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+  }
+  .footer-main-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    p {
+      margin-right: 3em;
+    }
   }
 }
